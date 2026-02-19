@@ -1,98 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevConnect</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevConnect</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!------------------------------Header --------------------------------------------->
+<header class="header">
+  <div class="container nav">
+    <img src="images/logo-1.png" alt="">
+    <a href="#" class="logo">DevConnect</a>
 
-<header>
-    <nav class="nav bd-grid">
-        <div>
-            <a href="#home" class="nav__logo">Dev Connect</a>
-        </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about-us" class="nav__link">About Us</a></li>
-                    <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#personality" class="nav__link">Personality</a></li>
-                    <li class="nav__item"><a href="#games" class="nav__link">Games</a></li>
-                    <button>Join Community</button>
-                        
-                </ul>
-            </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
     </nav>
+
+    <a href="#" class="btn-primary">Join Community</a>
+  </div>
 </header>
 
-<!------------------------------------------------HOME ------------------------------------------------------->
+<!------------------------------------------------- HERO ----------------------------------------------------->
+<section class="hero">
+  <div class="container hero-content">
+    <span class="badge">Welcome to DevConnect</span>
+    <h1>Where Developers Connect, Learn & Build Together</h1>
+    <p class="hero-paragraph">
+      Join a  thriving community of developers passionate about  coding, collaboration, and  continuous learning. Share knowledge, work on exciting projects, and grow your career
+        with us. 
+    </p>
 
-<div class="intro">
-    <div class="welcome">Welcome to Dev Connect</div>
-    <h1>Where Developers Connect,<br> Learn & Build Together</h1>
-    <p class="p-home">Join a thriving community of developers and creators passionate about coding, creating, collaboration and <br> continuous learning. Share knowledge, work on exciting projects, and grow your career <br> with us</p>
-            
-    <div class="btn-div">
-            <button class="community-btn"> Join Our Community</button> 
-            <button class="explore-btn"> Explore Projects</button>
+    <div class="hero-buttons">
+      <a href="#" class="btn-light">Join Our Community</a>
+      <a href="#" class="btn-outline">Explore Projects</a>
     </div>
-</div>
+  </div>
+</section>
 
-<article class="art-home">
-    <h1 class="article">Why Join Dev Connect?</h1>
-    <p class="p-article">We are more than just a community, we are family of developers helping each other succeed</p>
-
-    <div class="article-content">
-        <h1 class="h1-cont">Vibrant Community</h1>
-         <p class="p-cont">Connect with like-minded developers, share your passion for coding, and build lasting friendships.</p>
-    </div>
-
-    <div class="article-content">
-        <h1 class="h1-cont">Learn and Grow</h1>
-         <p class="p-cont">Access tutorials and challenges</p>
+<!--------------------------------------------- WHY JOIN --------------------------------------------------->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Join DevConnect?</h2>
+      <p class="sectio-paragraph">We are more than just a community , we are family of developers helping each other succeed</p>
     </div>
 
-    <div class="article-content">
-        <h1 class="h1-cont">Get recognized</h1>
-         <p class="p-cont">Showcase your skill and become our personality of the week</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Vibrant Community</h3>
+        <p class="card-paragraph">Connect with passionate developers from around the world.</p>
+      </div>
+
+      <div class="card">
+        <h3>Learn & Grow</h3>
+        <p class="card-paragraph">Access Tutorials and Challenges.</p>
+      </div>
+
+      <div class="card">
+        <h3>Get Recognized </h3>
+        <p class="card-paragraph">Showcase your skill and become our personality of the week.</p>
+      </div>
+      
+      <!-- <div class="card">
+        <h3>Get Recognized </h3>
+        <p class="card-paragraph">Collaborate on real world projects and build your portfolio.</p>
+      </div> -->
+
+    </div>
+  </div>
+</section>
+
+<!------------------------------------------------ EVENTS -------------------------------------------------------->
+
+<section class="section alt-bg">
+  <div class="container">
+    <div class="section-header">
+      <h2>Group Activities</h2>
+      <p class="event-p">Consistent sessions that keep members accountable.</p>
     </div>
 
-    <div class="article-content">
-        <h1 class="h1-cont">Build Projects</h1>
-         <p class="p-cont">Collaborate on real world projects and build your portfolio.</p>
+    <div class="grid-2">
+      <div class="event-card">
+        <span class="event-badge">Recurring</span>
+        <h3>Weekly Code Review</h3>
+        <p class="event-p">CJoin us every Friday for collaborative code reviews and learning..</p>
+        <strong>Every Friday – 6 PM GMT</strong>
+      </div>
+
+      <div class="event-card">
+        <span class="event-badge">Monthly</span>
+        <h3>Open Day Contribution</h3>
+        <p class="event-p">Learn how to contribute to open source projects together.</p>
+        <strong>Every Tuesday</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------------------------ FOOTER --------------------------------------------->
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>DevConnect</h3>
+      <p>
+        A focused community for developers building real projects,
+        improving together, and growing their careers.
+      </p>
     </div>
 
-</article>
-
-
-
-<article>
-    <h1 class="article">Group Activites</h1>
-    <p class="p-article">Stay Updated with the latest events and community activites</p>
-        
-    <div class="div-act">
-            <div class="recurring">
-                <h2 class="h2-act">Recurring</h2>
-            </div>
-        <h1 class="h1-cont">Weekly Code Review Session</h1>
-        <p class="p-cont">Join us every Friday for collaborative code reviews and learning.</p>
-        <h2 class="h2-cont">Every Friday, 6 PM GMT</h2>
+    <div class="footer-links">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
     </div>
 
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
 
+    <div class="footer-contact">
+      <h4>Connect</h4>
+      <p>Email: hello@devconnect.com</p>
+      <p>Twitter: @devconnect</p>
+    </div>
 
-</article>
+  </div>
 
+  <div class="footer-bottom">
+    <p>© 2026 DevConnect. All rights reserved.</p>
+  </div>
+</footer>
 
 
 </body>
