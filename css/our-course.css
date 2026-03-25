@@ -555,9 +555,8 @@
   padding: 0.6rem 1rem;
   border-bottom: none; 
 }
-
 @media (max-width: 480px) {
-  .logo-img { width: 24px; height: auto; }
+  .logo-img { width: 50px; height: 50px; }
   .logo { font-size: 0.85rem; }
 
   #joinBtn {
@@ -565,13 +564,8 @@
     padding: 4px 8px;
   }
 
-  .course-search {
-    display: none !important;
-  }
-
-  .course-search::placeholder {
-    color: transparent !important;
-  }
+  .course-search { display: none !important; }
+  .course-search::placeholder { color: transparent !important; }
 
   .course-search-btn {
     display: inline-block;
@@ -581,6 +575,32 @@
 
   .search-bar-container { gap: 6px; }
   .search-right .dropbtn { font-size: 0.5rem; }
+
+  /* ✅ Dropdown styles for mobile */
+  .search-right {
+    position: relative !important;
+    justify-content: flex-start !important; /* force content to left */
+    text-align: left !important;
+  }
+  .search-right .dropdown-content {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;       /* anchor to left */
+    right: auto !important;   /* disable right anchoring */
+    width: 80% !important;    /* keep it neat on mobile */
+    background: #fff !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    z-index: 999 !important;
+  }
+  .search-right .dropdown-content a {
+    display: block !important;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+    text-align: left !important;
+    border-bottom: 1px solid #eee !important;
+    color: var(--dark) !important;
+  }
 
   .hero.ourcourse-hero h1 {
     font-size: 1.3rem;
@@ -767,3 +787,4 @@
     margin-top: 0.5rem;
   }
 }
+

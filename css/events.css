@@ -1,0 +1,107 @@
+.event-poster img {
+  width: 100% !important;
+  max-width: 900px !important;
+  height: auto !important;
+  max-height: 400px !important; 
+  object-fit: contain !important;
+  border-radius: 6px !important;
+  margin: 0.5rem auto !important;
+  display: block !important;
+}
+
+.event-details {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.event-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.event-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #666;
+}
+
+.event-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0;
+}
+
+.event-meta li {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  font-weight: 500;
+}
+
+.event-note {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.8rem;
+}
+
+.btn-primary {
+  display: inline-block !important;
+  background-color: #6c63ff !important;
+  color: #fff !important; 
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  transition: background 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: #5146d9 !important;
+}
+
+.slide-left { animation: slideLeft 1s ease; }
+.slide-right { animation: slideRight 1s ease; }
+.slide-up { animation: slideUp 1s ease; }
+.slide-down { animation: slideDown 1s ease; }
+
+@keyframes slideLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.3rem; line-height: 1.3; }
+  .hero-paragraph { font-size: 0.85rem; line-height: 1.4; }
+  .event-poster img { max-height: 220px; }
+  .event-meta li { font-size: 0.8rem; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h1 { font-size: 1.5rem; }
+  .hero-paragraph { font-size: 0.95rem; }
+  .event-poster img { max-height: 280px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 { font-size: 1.7rem; }
+  .hero-paragraph { font-size: 1rem; }
+  .event-poster img { max-height: 320px; }
+}
+
+@media (min-width: 1025px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-paragraph { font-size: 1.1rem; }
+  .event-poster img { max-height: 400px; }
+}

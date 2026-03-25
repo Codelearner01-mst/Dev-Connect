@@ -214,8 +214,8 @@ body {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 480px) {
   .logo-img {
-    width: 20px !important;  
-    height: auto !important;
+    width: 50px !important;  
+    height: 50px !important;
   }
   .logo {
     font-size: 0.8rem !important; 
